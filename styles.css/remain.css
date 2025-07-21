@@ -102,9 +102,6 @@ background: rgb(255, 255, 255);
    margin-right: 10px;
    margin-top: 10px;
   }
-  .popular-collection{
-    
-  }
   .product-grid{
     display: flex;
     gap: 30px;
@@ -165,6 +162,29 @@ background: rgb(255, 255, 255);
   .right-arrow{
     border-radius: 8px;
   } 
+  /* footer */
+  .influencer-bio{
+    background-color: #0A0826;
+    padding: 50px 20px;
+  }
+  .bio-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:#D9DBE1;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .bio-description{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #D9DBE1;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .content{
+     max-width: 1200px;
+      margin: 0 auto;
+  }
  
 /* /* Mobile device  */
 @media screen and (max-width: 768px) {
@@ -177,7 +197,7 @@ background: rgb(255, 255, 255);
 
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
    .container {
     padding: 0 16px;
@@ -197,7 +217,61 @@ background: rgb(255, 255, 255);
     margin-left: 0;              /* remove excess margin */
     gap: 30px;                    /* reduce spacing between logos */
   }
+  /* features */
+  .featured-image-container {
+    width: 100%; /* full width on small screens */
+    max-width: none; /* remove any constraints */
+    height: auto;
+    margin-bottom: 20px; /* space between image and content */
+  }
+  .featured-products-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .featured-content {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .featured-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .featured-description {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+  /* collection section */
+ .product-grid {
+    flex-direction: column;
+    align-items: center; /* Optional: centers the column items */
+    display: flex;
+  gap: 30px;
+  justify-content: center;
+  }
 }
+/* medihum */
+@media screen and (min-width:576px) and (max-width:992px){
+   .compaines-logo {
+    
+  }
+  .compines-section{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
 
 
  
