@@ -262,14 +262,29 @@ background: rgb(255, 255, 255);
   }
 }
 /* medihum */
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:1024px){
    .compaines-logo {
-    
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .compines-section{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
   }
+  /* featured product */
+   .featured-content {
+    max-width: 90%;
+   margin-bottom: 0;
+   margin-left: auto;
+    padding: 20px;
+    text-align: center;
+  }
+   .featured-description {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-left: 0;
+  }
+ 
 }
 
 
